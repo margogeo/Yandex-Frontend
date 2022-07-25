@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-murmarket-grid</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h3 class="title">Murmarket</h3>
+      </header>
+
+      <main class="main">
+        <div class="cats-container">
+        <div class="card">
+          <img class="img" src="pictures/cat-1.jpg" alt="cat-1" />
+          <div class="info">
+            <a class="name-link" href="https://yandex.ru">
+              <h2 class="name">Garfield</h2>
+            </a>
+            <p class="info-category">Возраст: 5 лет</p>
+            <p class="info-category">Порода: рыжий полосатый</p>
+          </div>
+          <div class="extra-info">
+            <p class="extra-info-text">
+              Любит лазанью, Джона, не любит собак, особенно Оди. Любит телевизор и
+               танцевальные программы. Его необходимо любить, кормить и никому не отдавать.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img" src="pictures/cat-2.jpg" alt="cat-2" />
+          <div class="info">
+            <a class="name-link" href="https://yandex.ru">
+              <h2 class="name">The cat in the hat</h2>
+            </a>
+            <p class="info-category">Возраст: 22 года</p>
+            <p class="info-category">Порода: Аристократ</p>
+          </div>
+          <div class="extra-info">
+            <p class="extra-info-text">Очень мудрый, выступает по ТВ,
+              ведет программы для детей.
+           </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img" src="pictures/cat-3.jpg" alt="cat-3" />
+          <div class="info">
+            <a class="name-link" href="https://yandex.ru">
+              <h2 class="name">Тузик</h2>
+            </a>
+            <p class="info-category">Возраст: 2 года</p>
+            <p class="info-category">Порода: Рыжик дворовый</p>
+          </div>
+          <div class="extra-info">
+            <p class="extra-info-text">Good friend.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img" src="pictures/cat-4.jpg" alt="cat-4" />
+          <div class="info">
+            <a class="name-link" href="https://yandex.ru">
+              <h2 class="name">Bella</h2>
+            </a>
+            <p class="info-category">Возраст: 2 года</p>
+            <p class="info-category">Порода: Королевская</p>
+          </div>
+          <div class="extra-info">
+            <p class="extra-info-text">Disney star.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img" src="pictures/cat-5.jpg" alt="cat-5" />
+          <div class="info">
+            <a class="name-link" href="https://yandex.ru">
+              <h2 class="name">Снежок</h2>
+            </a>
+            <p class="info-category">Возраст: 2 года</p>
+            <p class="info-category">Порода: Неизвестная</p>
+          </div>
+          <div class="extra-info">
+            <p class="extra-info-text">Meme star. Заберет ваш обед.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img" src="pictures/cat-6.jpg" alt="cat-6" />
+          <div class="info">
+            <a class="name-link" href="https://yandex.ru">
+              <h2 class="name">Илья</h2>
+            </a>
+            <p class="info-category">Возраст: 4 года</p>
+            <p class="info-category">Порода: Неизвестная</p>
+          </div>
+          <div class="extra-info">
+            <p class="extra-info-text">Meme star.</p>
+          </div>
+        </div>
+      </div>
+
+        <aside class="filters">
+          <section class="age-filter">
+            <p class="age-filter-subtitle">Возраст</p>
+            <section class="slider">
+              <span class="gray-line"></span>
+              <span class="blue-line"></span>
+              <span class="gray-line"></span>
+    
+              <span class="circle left-circle"></span>
+              <span class="circle right-circle"></span>
+            </section>
+            <p class="age-filter-fromto">от 2 до 4 лет</p>
+          </section>
+    
+          <p class="breed-filter-subtitle">Порода</p>
+    
+          <section class="breed pers-breed">
+            <label for="pers-selector">
+              <span class="fake"></span>
+            </label>
+            <p class="breed-name">Рыжий</p>
+          </section>
+    
+          <section class="breed brit-breed">
+            <label for="brit-selector">
+              <span class="fake"></span>
+            </label>
+            <p class="breed-name">Аристократ</p>
+          </section>
+    
+          <section class="breed sib-breed">
+            <label for="sib-selector">
+              <span class="fake"></span>
+            </label>
+            <p class="breed-name">Королевская</p>
+          </section>
+    
+          <section class="breed no-breed-filter">
+            <label for="no-breed-selector">
+              <span class="fake"></span>
+            </label>
+            <p class="breed-name">Нет</p>
+          </section>
+        </aside>
+    
+      </main>
+      <footer class="footer">
+        <div class="contacts">
+          <p class="m0">Напишите нам:</p>
+          <a href="mailto:cats@babuli.ru">cats@babuli.ru</a>
+          <br />
+          <a href="mailto:mailto:vnuchek@babuli.ru">mailto:vnuchek@babuli.ru</a>
+        </div>
+        <span class="copyright">
+          &copy; 2020 &laquo;<a href="https://www.yandex.ru">Бабушкины котята</a>&raquo;
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>

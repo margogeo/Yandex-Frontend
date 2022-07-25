@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Прокачай кота</title>
+    <link href="./index.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main class="main"> 
+      <article class="form-window main__form-window">
+        <button class="form-button form-window__close-button">x</button>
+        <section class="form-window__content">
+          <h1 class="form-window__title">Прокачай кота!</h1>
+          <p class="form-window__desc">
+            Подпишись на расылку нашего тренера и получи индивидуальную программу тренировок для своего кота
+          </p>
+          <form action="" class="form" method="post">
+            <div class="form__item">
+              <label class="form__age-label" for="age">Возраст кота: </label>
+              <input type="number" min="0" max="22" class="form__age-selector" id="age" name="age" />
+              <span class="form__text">лет,</span>
+              <label class="form__weight-label" for="weight-input"> вес:</label>
+              <input class="form__weight-input" id="weight-input" step="0.5" type="number" min="0"/>
+              <span class="form__text">кг</span>
+            </div>
+            <div class="form__item">
+              <input class="form__program-input" id="pr1" name="program" type="radio"/>
+              <label class="form__program-label" for="pr1">+кг</label>
+              <input class="form__program-input" id="pr2" name="program" type="radio"/>
+              <label class="form__program-label" for="pr2">-кг</label>
+              <input class="form__program-input" id="pr3" name="program" type="radio"/>
+              <label class="form__program-label" for="pr3">Не знаю</label>
+            </div>
+            <div class="form__item">
+              <input class="form__email-input" placeholder="Email" type="email"/>
+            </div>
+            <div class="spam-checkbox form__item">
+              <input class="spam-checkbox__spam-input" id="spam" type="checkbox"/>
+              <label class="spam-checkbox__spam-label" for="spam">Не хочу спам</label>
+              <div class="spam-checkbox__custom-spam-input"></div>
+            </div>
+            <div class="form__item">
+              <button class="form-button form-window__submit-button" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </section>
+        <aside class="form-window__right-side">
+          <div class="form-window__right-side-line"></div>
+          <img class="form-window__right-side-photo" src="pictures/cat-1.jpg" alt="Тучный белый кот сидит" />
+        </aside>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>02-murmarket</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h3 class="title">Murmarket</h3>
+    </header>
+    
+    <main class="main">
+      <div class="cats-container">
+        <input class="cat" id="cat-0-input" type="radio" name="cat" checked />
+        <label class="cat-label" for="cat-0-input">
+          <div class="cat-empty"></div>
+        </label>
+        
+        <input class="cat" id="cat-1-input" type="radio" name="cat" />
+        <label class="cat-label" for="cat-0-input">
+            <article class="cat-card">
+              <img class="cat-img" src="pictures/cat-1.jpg" alt="cat-1" />
+              <a href="#modalbox1" class="cat-name">Garfield</a>
+            </article>
+        </label>
+
+        <input class="cat" id="cat-2-input" type="radio" name="cat" />
+        <label class="cat-label" for="cat-1-input">
+          <article class="cat-card">
+            <img class="cat-img" src="pictures/cat-2.jpg" alt="cat-2" />
+            <a href="#modalbox2" class="cat-name">The cat in the hat</a>
+          </article>
+        </label>
+
+        <input class="cat" id="cat-3-input" type="radio" name="cat" />
+        <label class="cat-label" for="cat-2-input">
+          <article class="cat-card">
+            <img class="cat-img" src="pictures/cat-3.jpg" alt="cat-3" />
+            <a href="#modalbox3" class="cat-name">Тузик</a>
+          </article>
+        </label>
+
+        <input class="cat" id="cat-4-input" type="radio" name="cat" />
+        <label class="cat-label" for="cat-3-input">
+          <article class="cat-card">
+            <img class="cat-img" src="pictures/cat-4.jpg" alt="cat-4" />
+            <a href="#modalbox4" class="cat-name">Bella</a>
+          </article>
+        </label>
+
+        <input class="cat" id="cat-5-input" type="radio" name="cat" />
+        <label class="cat-label" for="cat-4-input">
+          <article class="cat-card">
+            <img class="cat-img" src="pictures/cat-5.jpg" alt="cat-5" />
+            <a href="#modalbox5" class="cat-name">Снежок</a>
+          </article>
+        </label>
+      </div>
+    </main>
+
+    <div id="modalbox1" class="modal">
+      <div class="modalcontent"> 
+        <img class="img" src="pictures/cat-1.jpg" alt="cat-1" />
+        <div class="info">
+          <h2 class="name">Garfield</h2>
+          <p class="info-category">Возраст: 5 лет</p>
+          <p class="info-category">Порода: рыжий полосатый</p>
+          <p class="extra-info">
+          Любит лазанью, Джона, не любит собак, особенно Оди. Любит телевизор и
+          танцевальные программы. Его необходимо любить, кормить и никому не отдавать.
+          </p>
+        </div>
+        <a href="#" class="modalclose">&times;</a>
+      </div>
+    </div>
+
+    <div id="modalbox2" class="modal">
+      <div class="modalcontent"> 
+        <img class="img" src="pictures/cat-2.jpg" alt="cat-2" />
+        <div class="info">
+          <h2 class="name">The cat in the hat</h2>
+          <p class="info-category">Возраст: 22 года</p>
+          <p class="info-category">Порода: Аристократ</p>
+          <p class="extra-info">Очень мудрый, выступает по ТВ,
+                                     ведет программы для детей.
+          </p>
+        </div>
+        <a href="#" class="modalclose">&times;</a>
+      </div>
+    </div>
+
+    <div id="modalbox3" class="modal">
+      <div class="modalcontent"> 
+        <img class="img" src="pictures/cat-3.jpg" alt="cat-3" />
+        <div class="info">
+          <h2 class="name">Тузик</h2>
+          <p class="info-category">Возраст: 2 года</p>
+          <p class="info-category">Порода: Рыжик дворовый</p>
+          <p class="extra-info">Good friend.</p>
+        </div>
+        <a href="#" class="modalclose">&times;</a>
+      </div>
+    </div>
+
+    <div id="modalbox4" class="modal">
+      <div class="modalcontent"> 
+        <img class="img" src="pictures/cat-4.jpg" alt="cat-4" />
+        <div class="info">
+          <h2 class="name">Bella</h2>
+          <p class="info-category">Возраст: 2 года</p>
+          <p class="info-category">Порода: Королевская</p>
+          <p class="extra-info">Disney star.</p>
+        </div>
+        <a href="#" class="modalclose">&times;</a>
+      </div>
+    </div>
+
+    <div id="modalbox5" class="modal">
+      <div class="modalcontent"> 
+        <img class="img" src="pictures/cat-5.jpg" alt="cat-5" />
+        <div class="info">
+          <h2 class="name">Снежок</h2>
+          <p class="info-category">Возраст: 2 года</p>
+          <p class="info-category">Порода: Неизвестная</p>
+          <p class="extra-info">Meme star. Заберет ваш обед.</p>
+        </div>
+        <a href="#" class="modalclose">&times;</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Напишите нам:</p>
+      <a href="mailto:cats@babuli.ru">cats@babuli.ru</a>
+      <br />
+      <a href="mailto:vnuchek@babuli.ru">vnuchek@babuli.ru</a>
+      <span class="copyright">
+        &copy; 2018 OOO &laquo;<a href="https://www.google.com">Бабушкины котята</a>&raquo;
+      </span>
+    </footer>
+  </body>
+</html>

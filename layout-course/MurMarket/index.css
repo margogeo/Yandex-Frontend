@@ -1,0 +1,214 @@
+.header {
+  position: fixed;
+  
+  width: 100%;
+  height: 70px;
+  
+  border-bottom: 1px solid black;
+}
+  
+.title {
+  margin: 0;
+  padding: 13px 0px;
+  
+  font-family: 'PT Sans Narrow';
+  font-size: 32px;
+  text-align: center;
+}
+  
+.title::first-letter {
+  color: red;
+}
+  
+.main {
+  padding-top: 170px;
+}
+  
+.cat-card,
+.cat-empty {
+  position: relative;
+  
+  width: 30vw;
+  height: 22vw;
+}
+  
+.cat,
+.cat-label {
+  display: none;
+}
+  
+.cat-img {
+  height: 80%;
+  
+  opacity: 0.7;
+  width: 250px;
+}
+  
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(1),
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(2),
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(3),
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(2),
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(3),
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(4),
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(3),
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(4),
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(5),
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(4),
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(5),
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(6),
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(5),
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(6),
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(6) {
+  display: inline-block;
+}
+  
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(3) .cat-img,
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(2) .cat-img,
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(4) .cat-img,
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(3) .cat-img,
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(5) .cat-img,
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(4) .cat-img,
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(6) .cat-img,
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(5) .cat-img,
+.cat:checked:nth-of-type(6) ~ .cat-label:nth-of-type(6) .cat-img {
+  display: block;
+
+  margin: auto;
+}
+
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(2) .cat-img,
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(3) .cat-img,
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(4) .cat-img,
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(5) .cat-img,
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(6) .cat-img {
+  filter: brightness(50%);
+  height: 100%;
+  padding-bottom: 20px;
+  
+  opacity: 1;
+}
+  
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(2):hover .cat-img,
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(3):hover .cat-img,
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(4):hover .cat-img,
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(5):hover .cat-img,
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(6):hover .cat-img {
+  filter: brightness(50%);
+}
+  
+.cat-name {
+  position: absolute;
+  
+  top: 33%;
+  right: 0px;
+  left: 0px;
+  
+  visibility: hidden;
+  
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 10px;
+  
+  font-family: sans-serif;
+  font-size: 24px;
+  
+  text-align: center;
+}
+  
+.cat:checked:nth-of-type(1) ~ .cat-label:nth-of-type(2):hover .cat-name,
+.cat:checked:nth-of-type(2) ~ .cat-label:nth-of-type(3):hover .cat-name,
+.cat:checked:nth-of-type(3) ~ .cat-label:nth-of-type(4):hover .cat-name,
+.cat:checked:nth-of-type(4) ~ .cat-label:nth-of-type(5):hover .cat-name,
+.cat:checked:nth-of-type(5) ~ .cat-label:nth-of-type(6):hover .cat-name {
+  visibility: visible;
+}
+  
+.footer {
+  position: fixed;
+  bottom: 0px;
+  
+  width: 100%;
+  height: 90px;
+  
+  padding-left: 10px;
+  
+  border-top: 1px solid black;
+  
+  font-family: Arial;
+  font-size: 14px;
+}
+  
+.footer a {
+  color: #4c4cd8;
+}
+  
+.copyright {
+  float: right;
+  
+  margin-right: 20px;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.5s;
+
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+}
+
+.modal:target {
+  visibility: visible;
+
+  opacity: 1;
+}
+
+.modalcontent {
+  position: relative;
+
+  width: 60%;
+  max-width: 90%;
+  padding: 1em 2em;
+}
+
+.img {
+  float: left;
+  max-height: 400px;
+  width: 50%;
+}
+
+.modaltext {
+  padding-right: 20px;
+
+  color: white;
+  opacity: 100%;
+  text-align: right;
+}
+
+.name {
+  font-size: 36px;
+}
+
+.info {
+  padding-left: 65%;
+  color: white;
+  text-align: left;
+}
+
+.modalclose {
+  position: absolute;
+  top: 0;
+  right: 15px;
+
+  color: white;
+  font-size: 36px;
+}

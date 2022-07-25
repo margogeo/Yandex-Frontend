@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+}
+
+.style-selector-label {
+  margin: 10px 0 20px 10px;
+
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.card {
+  width: 400px;
+  margin: 10px;
+
+  border: 1px solid gray;
+  border-style: dotted;
+  border-radius: 3px;
+}
+
+.card:hover {
+  border-color: skyblue;
+  border-radius: 5%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-category:hover {
+  font-weight: bold;
+}
+
+.style-selector:checked + .cats-container .card {
+  display: inline-block;
+
+  width: 300px;
+}
+
+.name-link:hover {
+  color: violet;
+}
+
+.style-selector:checked ~ .cats-container .name {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.extra-info {
+  color: rgb(100, 100, 100);
+  font-size: 14px;
+}
+
+.style-selector:checked ~ .cats-container .card .extra-info {
+  display: none;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+
+  opacity: 0.8;
+}
+
+.img:hover {
+  transition: 1s;
+  transform: scale(1.05);
+}
+
+.card:hover .img {
+  border-radius: 5%;
+
+  opacity: 1;
+}
+
+.info {
+  margin: 20px;
+}
